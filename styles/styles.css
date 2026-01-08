@@ -64,4 +64,17 @@ html {
             stroke: #101010;
         }
     }
+/* Reclame*/
+aside {
+    background-color: var(--brand-color);
+    padding: 1.25em;
+    text-align: center;
+    font-size: var(--font-size-s);
+    color: var(--content-neutral-light);
+
+    a {
+        color: var(--content-neutral-light);
+        text-decoration: 2px underline;
+    }
 }
+
