@@ -64,6 +64,25 @@ html {
             stroke: #101010;
         }
     }
+
+    /* Primary navigation buttons*/
+    .navigation-button {
+        width: 3em;
+        aspect-ratio: 1;
+        background-color: transparent;
+        border: 1px solid transparent;
+        color: var(--content-neutral-dark);
+        border-radius: 50%;
+
+        &:hover {
+            cursor: pointer;
+            background-color: #f1f0ee;
+        }
+
+    }
+
+}
+
 /* Reclame*/
 aside {
     background-color: var(--brand-color);
