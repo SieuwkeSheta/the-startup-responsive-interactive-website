@@ -1,0 +1,23 @@
+/* Algemeen */
+* {
+    /* Zorgt ervoor dat de padding en border bij de breedte horen */
+    box-sizing: border-box;
+    margin: 0;
+}
+
+html {
+    /* Scrollen in html element-gaat smooth */
+    @media (prefers-reduced-motion: no-preference) {
+        scroll-behavior: smooth;
+    }
+
+    /* Custom font */
+    @font-face {
+        font-family: 'inter';
+        src: url('../fonts/Inter-VariableFont_opsz,wght.ttf');
+    }
+
+    font-family: inter, sans-serif;
+
+    scrollbar-gutter: stable;
+}
