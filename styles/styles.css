@@ -23,6 +23,14 @@ html {
     --content-neutral-dark:rgb(16, 16, 16);
     --content-quiet:rgb(97, 97, 97);
 
+    --navigation-button-hover: rgb(241, 240, 238);
+    --navigation-button-active: rgb(225, 224, 223);
+
+    --media-button-border-color: rgb(148, 148, 148);
+    --media-button-hover-state-background-color: rgb(234, 233, 247);
+    --media-button-active-state-background-color: rgb(214, 212, 240);
+
+
     /* Font size */
     --font-size-heading-l: 2rem;
     --font-size-heading-m: 1.6rem;
@@ -44,22 +52,22 @@ html {
         width: 3.5em;
         aspect-ratio: 1;
         background-color: transparent;
-        border: 1px solid rgb(148, 148, 148);
+        border: 1px solid var(--media-button-border-color);
         border-radius: 50%;
         transition: 0.4s;
 
         &:hover {
             cursor: pointer;
-            background-color: rgb(234, 233, 247);
+            background-color: var(--media-button-hover-state-background-color);
         }
 
         &:active {
-            background-color: rgb(214, 212, 240);
+            background-color: var(--media-button-active-state-background-color);
         }
 
         svg {
             vertical-align: bottom;
-            stroke: #101010;
+            stroke: var(--content-neutral-dark);
         }
     }
 
@@ -74,7 +82,11 @@ html {
 
         &:hover {
             cursor: pointer;
-            background-color: #f1f0ee;
+            background-color: var(--navigation-button-hover);
+        }
+
+        &:active {
+            background-color: var(--navigation-button-active);
         }
 
     }
