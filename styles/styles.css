@@ -47,6 +47,10 @@ html {
         src: url('../fonts/Inter-VariableFont_opsz,wght.ttf');
     }
 
+    * {
+        font-family: 'inter', sans-serif;
+    }
+
     /* Media gallery buttons */
     .media-gallery-button {
         width: 3.5em;
