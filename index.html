@@ -190,6 +190,7 @@
 
     <main>
 
+        <!-- Titel van tent -->
         <hgroup>
             <!-- Link naar tenten met het zelfde merk pagina -->
             <p><a href="https://www.decathlon.nl/brands/quechua">QUECHUA</a></p>
@@ -197,7 +198,7 @@
             <h1>Kampeertent MH100 XXL 4 personen</h1>
         </hgroup>
         <!-- Reviews -->
-        <ul>
+        <ul class="reviews">
             <li>
                 <svg width="86" height="15" viewBox="0 0 86 15" fill="none" xmlns="http://www.w3.org/2000/svg">
                     <title> Beoordelingan van de 5 sterren</title>
@@ -205,11 +206,14 @@
                 </svg>
                 4.7
             </li>
+            <!-- Lijn tussen de sterren en de link naar de reviews -->
+            <div class="review-vertical-line"></div>
+            
             <li><a href="#">822 reviews</a></li>
         </ul>
         <!-- Bewaar product knop -->
         <form>
-            <button>
+            <button class="save-product-button">
                 <svg width="25" height="22" viewBox="0 0 25 22" fill="none" xmlns="http://www.w3.org/2000/svg">
                     <title>Bewaar product</title>
                     <path d="M14.1807 2.85547C16.2472 0.723355 19.4873 0.378866 21.7129 2.08496L21.9248 2.25684C24.5457 4.49406 24.6871 8.52284 22.334 10.9512L12.8857 20.707C12.6683 20.9314 12.3278 20.9314 12.1104 20.707L2.66211 10.9512C0.387196 8.59861 0.44921 4.74416 2.83789 2.47168L3.07617 2.25684C5.30414 0.358316 8.69254 0.655645 10.8203 2.85547L10.8213 2.85645L11.7832 3.84766L12.501 4.58691L13.2178 3.84766L14.1797 2.85645L14.1807 2.85547Z" stroke="#3643BA" stroke-width="2"/>
@@ -218,7 +222,7 @@
         </form>
         
         <!-- Media gallerij -->
-        <div>
+        <div class="media-gallery">
             <!-- Grote foto -->
             <img src="assets/tent-front.jpg" alt="Voorkant tent" width="300">
             <!-- Kleine foto's -->
@@ -250,8 +254,9 @@
                 </svg>
             </button>
         </div>
+
         <!-- Product beschrijving -->
-        <p>Geniet van de mooie ruimte die deze toegankelijke tent biedt, met een eenvoudige en gemakkelijk te monteren boogstructuur.</p>
+        <p class="product-discription">Geniet van de mooie ruimte die deze toegankelijke tent biedt, met een eenvoudige en gemakkelijk te monteren boogstructuur.</p>
         <!-- Pruduct ID -->
         <p>ID 8755590</p>
         <!-- Description list voor varianten van het product -->
