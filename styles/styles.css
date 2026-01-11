@@ -364,3 +364,11 @@ hgroup {
     max-width:  50ch;
     font-size: var(--font-size-s);
 }
+
+/* Product ID */
+.product-id {
+    padding: 0 2em 1em;
+    color: var(--content-quiet);
+    font-size: 12px;
+    font-weight: var(--font-weight-standard);
+}
