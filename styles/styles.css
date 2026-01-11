@@ -137,6 +137,32 @@ html {
 
     }
 
+    /* Searchbar */
+    search {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin: 0.1em;
+
+        input {
+            background-color: rgb(245, 244, 245);
+            border: 1px solid transparent;
+            border-radius: 20px;
+            font-size: var(--font-size-m);
+            padding: 0.6em 2em;
+            width: 85vw;
+            
+            /* search-icon */
+            background-image: url(/assets/search-icon.svg);
+            background-repeat: no-repeat;
+            background-position: 0.2em center;
+
+            &::placeholder {
+                color: var(--content-quiet);
+                font-weight: var(--font-weight-standard);
+            }
+        }
+    }
 }
 
 /* Reclame*/
