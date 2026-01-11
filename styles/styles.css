@@ -285,3 +285,18 @@ aside {
         
     }
 }
+
+/* Titel van tent */
+hgroup {
+    display: grid;
+    gap: 0.5em;
+    padding: 1em 1.5em;
+
+    a {
+        color: var(--content-neutral-dark);
+        font-size: var(--font-size-l);
+        font-weight: 700;
+        text-decoration: none;
+    }
+}
+
