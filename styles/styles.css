@@ -163,6 +163,54 @@ html {
             }
         }
     }
+
+    /* Accordion information */
+    .accordion-information {
+        padding: 1em 1.5em;
+        font-size: 14px;
+        font-weight: var(--font-weight-standard);
+
+        /* Title of accordion */
+        summary {
+            display: flex;
+            align-items: center;
+            gap: 0.5em;
+            list-style-type: '';
+            
+            /* Icon to open accordion */
+            &::after {
+                content: url(/assets/accordion-icon-open.svg);
+                margin-left: auto;
+            }
+
+            /* Icon to close accordion */
+            [open] &::after {
+                content: url(/assets/accordion-icon-close.svg);
+            }
+            
+            &:hover {
+                cursor: pointer;
+            }
+        }
+
+        /* Content inside accordion when opened */
+        p {
+            padding: 0.5em 2em;
+            color: var(--content-quiet);
+            line-height: 1.4;
+        }
+
+        a {
+            padding: 0 2em;
+            color: var(--brand-color);
+            text-decoration: none;
+
+            &:hover {
+                color: var(--content-neutral-dark);
+            }
+        }
+    }
+
 }
 
 /* Reclame*/
