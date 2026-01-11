@@ -495,7 +495,7 @@ hgroup {
         padding: 0.5em 2em;
 
         &::before {
-            content: url('../assets/green-dot.svg');
+            content: url(../assets/green-dot.svg);
             margin-right: 0.5em;
             
         }
