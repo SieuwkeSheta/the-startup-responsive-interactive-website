@@ -302,7 +302,7 @@ hgroup {
 
 /* Reviews */
 .reviews {
-    /* display: flex; */
+    display: flex;
     gap: 0.8em;
     list-style: none;
     padding: 1em 1.5em;
@@ -322,37 +322,49 @@ hgroup {
     }
 }
 
-/* Bewaar product knop */
-.save-product-button {
-    position: absolute;
-    margin-top: 2em;
-    left: 20em;
-    background-color: transparent;
-    border: 1px solid transparent; 
-
-    &:hover, &:focus {
-        cursor: pointer;
-        svg {
-            fill: #C4C0F7;
-        }
-    }
-
-    /* Active state als er op geklikt is */
-    /* &.active {
-        svg {
-            fill: var(--brand-color);
-        }
-    } */
-}
-
 /* Media gallerij */
 .media-gallery {
     padding: 1em 1.5em;
+    position: relative;
+
+    /* Bewaar product knop */
+    .save-product-button {
+        position: absolute;
+        top: 3em;
+        right: 3em;
+        background-color: transparent;
+        border: 1px solid transparent; 
+
+        &:hover, &:focus {
+            cursor: pointer;
+            svg {
+                fill: #C4C0F7;
+            }
+        }
+
+        /* Active state als er op geklikt is */
+        /* &.active {
+            svg {
+                fill: var(--brand-color);
+            }
+        } */
+    }
+
+    .big-image {
+        width: 100%;
+    }
 
     /* Lijst kleine foto's */
     ul {
         list-style: none;
-        padding: 0;
+        padding: 1em 0 0;
+        display: flex;
+        overflow-x: scroll;
+        gap: 0.5em;
+    }
+
+    .media-gallery-button {
+        margin-top: 1em;
     }
 }
 
