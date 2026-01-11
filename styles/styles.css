@@ -422,3 +422,69 @@ hgroup {
     }
     
 }
+
+/* Delevery options */
+.delevery-options {
+    padding: 1.5em;
+    font-size: 15px;
+    font-weight: var(--font-weight-standard);
+
+    h2 {
+        font-size: var(--font-size-heading-s);
+        font-weight: 600;
+    }
+
+    h3 {
+        font-size: var(--font-size-heading-xs);
+        font-weight: var(--font-weight-standard);
+        display: flex;
+        gap: 0.5em;
+        color: var(--content-neutral-dark);
+    }
+
+    /* Buttons postalcode and store stock  */
+    button {
+        background-color: transparent;
+        border: none;
+        color: var(--brand-color);
+        padding: 0 2.5em;
+        font-weight: var(--font-weight-standard);
+
+        &:hover {
+            cursor: pointer;
+            color: var(--content-neutral-dark);
+        }
+    }
+
+    p {
+        color: var(--content-quiet);
+        padding: 0.5em 2em;
+
+        &::before {
+            content: url('/assets/green-dot.svg');
+            margin-right: 0.5em;
+            
+        }
+    }
+
+    /* Home delevery option */
+    .delevery-option-home-delevery {
+        h3 {
+            display: inline-block;
+        }
+
+        button {
+            padding: 0 0.5em;
+        }
+    }
+
+    .delevery-option-home-delevery,
+    .delevery-option-in-store,
+    .delevery-option-at-postnl {
+        padding-bottom: 1em;
+    }
+
+    svg {
+        vertical-align: top;
+    }
+}
