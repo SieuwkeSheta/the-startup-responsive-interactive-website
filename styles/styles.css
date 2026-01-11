@@ -344,3 +344,15 @@ hgroup {
         }
     } */
 }
+
+/* Media gallerij */
+.media-gallery {
+    padding: 1em 1.5em;
+
+    /* Lijst kleine foto's */
+    ul {
+        list-style: none;
+        padding: 0;
+    }
+}
+
