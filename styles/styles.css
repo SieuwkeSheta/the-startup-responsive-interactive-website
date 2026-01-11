@@ -395,3 +395,30 @@ hgroup {
     background-color: var(--commercial-color);
     width: fit-content;
 }
+
+/* Knop om product in winkelmand te plaatsen */
+.buy-button {
+    display: flex;
+    justify-content: center;
+    padding: 1em 1.5em;
+
+    button {
+        background-color: var(--brand-color);
+        color: var(--content-neutral-light);
+        border: 1px solid transparent;
+        padding-block: 1.5em;
+        font-weight: var(--font-weight-standard);
+        font-size: 15px;
+        width: 100%;
+
+        &:hover {
+            cursor: pointer;
+            background-color: #313daa;
+        }
+
+        &:active, &:focus {
+            background-color: #262f82;
+        }
+    }
+    
+}
