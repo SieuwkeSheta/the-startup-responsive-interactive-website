@@ -372,3 +372,16 @@ hgroup {
     font-size: 12px;
     font-weight: var(--font-weight-standard);
 }
+
+/* Description list voor varianten van het product */
+.description-list-variants {
+    display: flex;
+    padding: 1.5em;
+    gap: 0.5em;
+    font-size: 14px;
+    font-weight: var(--font-weight-standard);
+
+    dd {
+        color: var(--content-quiet);
+    }
+}
