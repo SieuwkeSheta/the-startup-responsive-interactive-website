@@ -179,13 +179,13 @@ html {
             
             /* Icon to open accordion */
             &::after {
-                content: url(/assets/accordion-icon-open.svg);
+                content: url(../assets/accordion-icon-open.svg);
                 margin-left: auto;
             }
 
             /* Icon to close accordion */
             [open] &::after {
-                content: url(/assets/accordion-icon-close.svg);
+                content: url(../assets/accordion-icon-close.svg);
             }
             
             &:hover {
@@ -495,7 +495,7 @@ hgroup {
         padding: 0.5em 2em;
 
         &::before {
-            content: url('/assets/green-dot.svg');
+            content: url('../assets/green-dot.svg');
             margin-right: 0.5em;
             
         }
