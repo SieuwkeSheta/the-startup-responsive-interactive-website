@@ -281,8 +281,30 @@ aside {
     }
 
     svg {
-        color: var(--content-quiet);
-        
+        color: var(--content-quiet);   
+    }
+
+    /* Laat de secondary nav inklappen op mobiel */
+    a:not(:nth-of-type(6)),
+    svg {
+        display: none;
+
+        /* @media (min-width: 800px) {
+            display: flex;
+        } */
+    }
+
+    /* Voegt drie puntjes toe als secondary nav is ingeklapt */
+    a:nth-of-type(6) {
+        &::before {
+            content: '...';
+            margin-right: 0.5em;
+
+            /* @media (min-width: 800px) {
+                content: '';
+                margin-right: 0;
+            } */
+        }
     }
 }
 
