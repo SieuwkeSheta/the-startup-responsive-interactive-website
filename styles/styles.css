@@ -552,7 +552,7 @@ footer {
     /* Social media kanalen */
     .social-media-channels {
         list-style: none;
-        /* display: flex; */
+        display: flex;
         gap: 0.5em;
         padding: 1em 0;
 
