@@ -488,3 +488,93 @@ hgroup {
         vertical-align: top;
     }
 }
+
+/* Footer */
+footer {
+    background-color: var(--brand-color);
+    padding: 2.5em 1.5em;
+    display: grid;
+    gap: 1em;
+    
+    /* Retourneren, ruilen en garantie */
+    .return-and-warranty {
+        display: grid;
+        row-gap: 2em;
+        list-style: none;
+        
+        padding:0 0 4em;
+        line-height: 1.3;
+
+        p {
+            font-size: 14px;
+        }
+    }
+
+    a {
+        color: var(--content-neutral-light);
+        text-decoration: none;
+        font-size: var(--font-size-l);
+        font-weight: 600;
+
+        &:hover {
+            text-decoration: underline;
+        }
+    }
+    
+    /* download and become memeber */
+    .download-and-become-memeber {
+        display: flex;
+        gap: 0.3em;
+        align-items: top;
+
+        svg {
+            stroke: var(--brand-color);
+            fill: none;
+            transition: 0.3s;
+        }
+        
+        &:hover {
+            color: #CDD0EE;
+            text-decoration: none;
+
+            svg {
+                stroke: #CDD0EE;
+            }
+        }
+
+        
+    }
+
+    svg {
+        fill: var(--content-neutral-light);
+    }
+
+    /* Social media kanalen */
+    .social-media-channels {
+        list-style: none;
+        /* display: flex; */
+        gap: 0.5em;
+        padding: 1em 0;
+
+        a {
+            display: inline-flex;
+            border: 1px solid var(--content-neutral-light);
+            border-radius: 50%;
+            padding: 0.3em;
+
+            &:hover {
+                background-color: #5E69C8;
+                transition: 0.3s;
+            }
+
+            &:active, &:focus {
+                background-color: #868ED6;
+            }
+        }
+
+        svg {
+            width: 0.75em;
+        }
+        
+    }
+}
