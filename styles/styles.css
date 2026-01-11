@@ -211,6 +211,12 @@ html {
         }
     }
 
+    /* Button transition time */
+    button {
+        &:hover {
+            transition: 0.3s;
+        }
+    }
 }
 
 /* Reclame*/
