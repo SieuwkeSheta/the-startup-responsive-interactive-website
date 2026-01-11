@@ -356,3 +356,11 @@ hgroup {
     }
 }
 
+/* Product beschrijving */
+.product-discription {
+    padding: 1em 1.5em;
+    font-weight: var(--font-weight-standard);
+    line-height: 1.4;
+    max-width:  50ch;
+    font-size: var(--font-size-s);
+}
