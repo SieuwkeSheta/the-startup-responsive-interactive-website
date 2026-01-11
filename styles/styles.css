@@ -41,6 +41,24 @@ html {
     --font-size-m: 1.1rem;
     --font-size-s: 1rem;
 
+    --font-weight-standard: 500;
+
+    h1 {
+        font-size: var(--font-size-heading-m);
+    }
+    
+    h2 {
+        font-size: var(--font-size-heading-m);
+    }
+
+    h3 {
+        font-size: var(--font-size-heading-s);
+    }
+
+    h4 {
+        font-size: var(--font-size-heading-xs);
+    }
+
     /* Custom font */
     @font-face {
         font-family: 'inter';
