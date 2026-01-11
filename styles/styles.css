@@ -233,3 +233,36 @@ aside {
     }
 }
 
+/* Primaire navigatie  */
+.primairy-nav {
+
+    .ham-menu {
+        list-style: none;
+        font-size: var(--font-size-l);
+        font-weight: 600;
+        padding: 2em 1em;
+        margin: 0;
+        line-height: 1.1;
+
+        .navigation-button {
+            position: absolute;
+            right: 1em;
+            margin-top: -3em;
+        }
+
+        li {
+            padding: 0.5em 0;
+
+            a {
+                display: flex;
+                justify-content: space-between;
+                text-decoration: none;
+                color: var(--content-neutral-dark);
+
+                &:hover {
+                    color: var(--brand-color);
+                }
+            }
+        }
+    }   
+}
