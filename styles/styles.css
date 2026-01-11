@@ -235,6 +235,10 @@ aside {
 
 /* Primaire navigatie  */
 .primairy-nav {
+    .store-finder,
+    .help-button {
+        display: none;
+    }
 
     .ham-menu {
         list-style: none;
