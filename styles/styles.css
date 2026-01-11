@@ -266,3 +266,22 @@ aside {
         }
     }   
 }
+
+/* Secundaire navigatie */
+.secondary-nav {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    padding: 1em 1.5em;
+    gap: 0.2em;
+
+    a {
+        color: var(--content-quiet);
+        text-decoration: none;
+    }
+
+    svg {
+        color: var(--content-quiet);
+        
+    }
+}
