@@ -1,3 +1,22 @@
+// Hamburger menu
+// Stap 1: selecteer de hamburgermenulijst en de open en gesloten knoppen
+const hamMenu = document.querySelector('.ham-menu')
+const hamMenuButtonOpen = document.querySelector('.ham-menu-button-open')
+const hamMenuButtonClose = document.querySelector('.ham-menu-button-close')
+
+// Stap 2: Wacht tot op elke knop gedrukt wordt
+hamMenuButtonOpen.addEventListener('click', openHamMenu)
+hamMenuButtonClose.addEventListener('click', closeHamMenu)
+
+function openHamMenu() {
+    // Stap 3: Voeg een class toe als de hamburgermenulijst op gaat
+    hamMenu.classList.add('is-open')
+}
+
+function closeHamMenu() {
+    // Stap 4: Verwijder de class als de hamburgermenulijst sluit
+    hamMenu.classList.remove('is-open')
+}
 // Media gallerij images
 // Stap 1: selecteer de grote en kleine images
 const bigImg = document.querySelector('.big-image')

@@ -241,21 +241,33 @@ aside {
     }
 
     .ham-menu {
+        position: absolute;
+        width: 100%;
+        height: 100vh;
+        top: 0;
+        z-index: 1;
         list-style: none;
         font-size: var(--font-size-l);
         font-weight: 600;
         padding: 2em 1em;
         margin: 0;
         line-height: 1.1;
+        background-color: var(--content-neutral-light);
+        translate: -100%;
+        transition: 0.3s;
 
-        .navigation-button {
+        .ham-menu-button-close {
             position: absolute;
             right: 1em;
-            margin-top: -3em;
+            margin-top: -1em;
         }
 
         li {
             padding: 0.5em 0;
+
+            &:first-of-type{
+                padding-top: 3em;
+            }
 
             a {
                 display: flex;
@@ -267,6 +279,10 @@ aside {
                     color: var(--brand-color);
                 }
             }
+        }
+
+        &.is-open {
+            translate: 0;
         }
     }   
 }
