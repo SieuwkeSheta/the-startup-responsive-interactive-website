@@ -380,9 +380,10 @@ hgroup {
         top: 3em;
         right: 3em;
         background-color: transparent;
-        border: 1px solid transparent; 
+        border: 1px solid transparent;
+        
 
-        &:hover, &:focus {
+        &:hover {
             cursor: pointer;
             svg {
                 fill: #C4C0F7;
@@ -390,11 +391,13 @@ hgroup {
         }
 
         /* Active state als er op geklikt is */
-        /* &.active {
+        &.active {
+            animation-name: --heart-pound;
+            animation-duration: 0.8s;
             svg {
                 fill: var(--brand-color);
             }
-        } */
+        }
     }
 
     .big-image {
@@ -437,6 +440,16 @@ hgroup {
     .media-gallery-button {
         margin-top: 1em;
     }
+}
+
+/* Animatie die hart laat knoppen bij bewaar product */
+@keyframes --heart-pound {
+  50% {
+    transform: scale(1.5)
+  }
+  100% {
+    transform: scale(1);
+  }
 }
 
 /* Product beschrijving */

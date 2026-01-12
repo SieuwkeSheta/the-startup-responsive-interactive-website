@@ -17,6 +17,21 @@ function closeHamMenu() {
     // Stap 4: Verwijder de class als de hamburgermenulijst sluit
     hamMenu.classList.remove('is-open')
 }
+
+
+// Bewaar product knop
+// Stap 1: selecteer het hartje
+const saveButton = document.querySelector('.save-product-button')
+
+// Stap 2: Wacht tot gebruiker op hartje klikt
+saveButton.addEventListener('click', saveProduct)
+
+function saveProduct() {
+    // Stap 3: toggle classname voor het veranderen van kleur van hartje en laat het bonken
+    saveButton.classList.toggle('active')
+}
+
+
 // Media gallerij images
 // Stap 1: selecteer de grote en kleine images
 const bigImg = document.querySelector('.big-image')
