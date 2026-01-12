@@ -14,6 +14,11 @@ html {
     scrollbar-gutter: stable;
 }
 
+/* Als hamburgermenu open is, dan kun je niet verder scrollen */
+html:has(.is-open) {
+    overflow: hidden;
+}
+
 /* Custom properties */
 :root {
     /* Colors */
