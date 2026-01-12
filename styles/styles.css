@@ -411,6 +411,8 @@ hgroup {
         display: flex;
         overflow-x: scroll;
         gap: 0.5em;
+        scroll-snap-type: x mandatory;
+
         /* Radiobutton checkbox onzichtbaar maken */
         .img-thumbnail-active input[type="radio"] {
             position: absolute;
@@ -434,6 +436,11 @@ hgroup {
                 cursor: pointer;
                 opacity: 1;
             }
+        }
+
+        /* Bij oneven getallen snapt de image-slider  */
+        li:nth-of-type(odd){
+            scroll-snap-align: start;
         }
     }
 
