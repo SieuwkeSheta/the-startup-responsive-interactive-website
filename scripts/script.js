@@ -19,6 +19,7 @@ function closeHamMenu() {
 }
 
 
+
 // Bewaar product knop
 // Stap 1: selecteer het hartje
 const saveButton = document.querySelector('.save-product-button')
@@ -32,27 +33,27 @@ function saveProduct() {
 }
 
 
+
 // Media gallerij images
-// Stap 1: selecteer de grote en kleine images
+// Stap 1: selecteer de grote image en de radiobuttons naast de kleine images
 const bigImg = document.querySelector('.big-image')
-const smallImg = document.querySelectorAll('.small-image')
+const smallImgRadioBtns = document.querySelectorAll('[name="img-thumbnail-active"]')
 
+// Stap 2: Wacht tot gebruiker op een radiobutton in een kleine image klikt
+smallImgRadioBtns.forEach(
+    function(smallImgRadioBtn) {
+        smallImgRadioBtn.addEventListener('change', showbigImg)
+    }
+)
 
-// Stap 2: Wacht tot gebruiker op een kleine image klikt
-smallImg.forEach(function(img){
-    img.addEventListener('click', showbigImg)
-})
+function showbigImg(event) {
+    // Stap 4: Laat 'smallImg' de eerst volgende img zijn na de radiobutton (die in hetzelfde label zit)
+    const smallImg = this.nextElementSibling
 
-function showbigImg() {
     // Stap 3: Verander de grote image in een kleine image door de 'src' van de grote image aan te passen 
     // + verander bijbehorende alt-attribuut
-    bigImg.src = this.src
-    bigImg.alt = this.alt
+    bigImg.src = smallImg.src
+    bigImg.alt = smallImg.alt
+}
 }
 
-// Stap 2 en Stap 3 gecombineerd
-// smallImg.forEach(function forEachImage(img) {
-//     img.addEventListener("click",function showImage(ev) {
-//         bigImg.src = this.src
-//     } )
-// })
