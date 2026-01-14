@@ -55,29 +55,5 @@ function showbigImg(event) {
     bigImg.src = smallImg.src
     bigImg.alt = smallImg.alt
 }
-
-
-
-// Media gallerij buttons
-// Stap 1: selecteer media gallerij buttons en de media gallerij carousel
-const prevBtn = document.querySelector(".prev1");
-const nextBtn = document.querySelector(".next1");
-const carousel = document.querySelector(".carousel");
-
-// Stap 2: Wacht tot gebruiker op een button klikt
-prevBtn.addEventListener("click", toPrevSlide);
-nextBtn.addEventListener("click", toNextSlide);
-
-// Stap 3: Laat linker knop de media gallerij carousel naar links sliden
-function toPrevSlide() {
-    const carouselWidth = carousel.offsetWidth;
-
-    carousel.scrollLeft = carousel.scrollLeft - carouselWidth * .8;
 }
 
-// Stap 4: Laat rechter knop de media gallerij carousel naar rechts sliden
-function toNextSlide() {
-    const carouselWidth = carousel.offsetWidth;
-
-    carousel.scrollLeft = carousel.scrollLeft + carouselWidth * .8;
-}
