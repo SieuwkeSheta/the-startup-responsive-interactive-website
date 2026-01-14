@@ -83,6 +83,10 @@ html:has(.is-open) {
         border-radius: 50%;
         transition: 0.4s;
 
+        /* @media (min-width: 600px) {
+            transform: rotate(90deg);
+        } */
+
         &:hover {
             cursor: pointer;
             background-color: var(--media-button-hover-state-background-color);
@@ -181,7 +185,7 @@ html:has(.is-open) {
             align-items: center;
             gap: 0.5em;
             list-style-type: '';
-            
+
             /* Icon to open accordion */
             &::after {
                 content: url(../assets/accordion-icon-open.svg);
@@ -394,6 +398,7 @@ hgroup {
         &.active {
             animation-name: --heart-pound;
             animation-duration: 0.8s;
+
             svg {
                 fill: var(--brand-color);
             }
