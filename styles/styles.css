@@ -190,7 +190,7 @@ html:has(.is-open) {
 
     /* Accordion information */
     .accordion-information {
-        padding: 1em 1.5em;
+        padding: 1em 0;
         font-size: 14px;
         font-weight: var(--font-weight-standard);
 
