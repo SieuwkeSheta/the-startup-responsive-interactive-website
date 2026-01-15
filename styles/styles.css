@@ -613,8 +613,8 @@ hgroup {
         }
     }
 
-    .media-gallery-button {
-        margin-top: 1em;
+    .media-gallery-button-wrapper {
+        justify-self: center;
     }
 }
 
