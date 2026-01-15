@@ -249,6 +249,25 @@ main {
     @media (min-width: 600px) {
         padding: 0 4em;
     }
+
+    @media (min-width: 1000px){
+        display: grid;
+        align-items: flex-start;
+        grid-template-columns: 2fr 1fr;
+        grid-row: 1fr max-content;
+        column-gap: 3em;
+        padding: 0 4em;
+    }
+
+    @media (min-width: 1200px) {
+        padding: 0 10vw;
+    }
+
+    @media (min-width: 1600px) {
+        padding: 0 15vw;
+    }
+}
+
 /* Reclame*/
 aside {
     background-color: var(--brand-color);
@@ -499,6 +518,14 @@ hgroup {
         display: grid;
         grid-template-columns: max-content 1fr;
         gap: 0.5em;
+    }
+
+    /* Media gallerij links aan pagina vast zetten */
+    @media (min-width: 1000px) {
+        position: sticky;
+        top: 2em;
+        grid-column: 1;
+        grid-row: 11 / -1;
     }
 
     /* Bewaar product knop */
