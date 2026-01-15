@@ -797,6 +797,10 @@ footer {
     display: grid;
     gap: 1em;
     
+    @media (min-width: 1000px) {
+        padding: 2.5em 6em;
+    }
+    
     /* Retourneren, ruilen en garantie */
     .return-and-warranty {
         display: grid;
@@ -805,6 +809,17 @@ footer {
         
         padding:0 0 4em;
         line-height: 1.3;
+
+        @media (min-width: 600px) {
+            grid-template-columns: 1fr 1fr;
+            gap: 1em;
+        }
+
+        @media (min-width: 1000px) {
+            display: flex;
+            justify-content: space-between;
+            padding:0 0 2em;
+        }
 
         p {
             font-size: 14px;
