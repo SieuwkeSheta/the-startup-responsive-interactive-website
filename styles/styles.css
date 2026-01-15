@@ -243,6 +243,12 @@ html:has(.is-open) {
     }
 }
 
+main {
+    padding: 0 1.5em;
+
+    @media (min-width: 600px) {
+        padding: 0 4em;
+    }
 /* Reclame*/
 aside {
     background-color: var(--brand-color);
@@ -448,7 +454,7 @@ aside {
 hgroup {
     display: grid;
     gap: 0.5em;
-    padding: 1em 1.5em;
+    padding: 1em 0;
 
     a {
         color: var(--content-neutral-dark);
@@ -463,10 +469,14 @@ hgroup {
     display: flex;
     gap: 0.8em;
     list-style: none;
-    padding: 1em 1.5em;
+    padding: 1em 0;
 
     font-size: 14px;
     font-weight: var(--font-weight-standard);
+
+    @media (min-width: 1000px) {
+        padding: 0;
+    }
 
     /* Lijn tussen de sterren en de link naar de reviews */
     .review-vertical-line {
@@ -482,7 +492,7 @@ hgroup {
 
 /* Media gallerij */
 .media-gallery {
-    padding: 1em 1.5em;
+    padding: 1em 0;
     position: relative;
 
     /* Bewaar product knop */
@@ -592,7 +602,7 @@ hgroup {
 
 /* Product beschrijving */
 .product-discription {
-    padding: 1em 1.5em;
+    padding: 1em 0;
     font-weight: var(--font-weight-standard);
     line-height: 1.4;
     max-width:  50ch;
@@ -601,7 +611,6 @@ hgroup {
 
 /* Product ID */
 .product-id {
-    padding: 0 2em 1em;
     color: var(--content-quiet);
     font-size: 12px;
     font-weight: var(--font-weight-standard);
@@ -610,7 +619,7 @@ hgroup {
 /* Description list voor varianten van het product */
 .description-list-variants {
     display: flex;
-    padding: 1.5em;
+    padding: 1.5em 0;
     gap: 0.5em;
     font-size: 14px;
     font-weight: var(--font-weight-standard);
@@ -622,7 +631,7 @@ hgroup {
 
 /* Product prijs */
 .price-tag {
-    margin: 1em 1em;
+    margin: 1em 0;
     padding: 3px;
     font-size: var(--font-size-l);
     font-weight: 600;
@@ -634,7 +643,11 @@ hgroup {
 .buy-button {
     display: flex;
     justify-content: center;
-    padding: 1em 1.5em;
+    padding: 1em 0;
+
+    @media (min-width: 1600px) {
+        padding: 0;
+    }
 
     button {
         background-color: var(--brand-color);
@@ -653,13 +666,12 @@ hgroup {
         &:active, &:focus {
             background-color: #262f82;
         }
-    }
-    
+    }  
 }
 
 /* Delevery options */
 .delevery-options {
-    padding: 1.5em;
+    padding: 1.5em 0;
     font-size: 15px;
     font-weight: var(--font-weight-standard);
 
