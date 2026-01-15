@@ -395,6 +395,22 @@ aside {
     padding: 1em 1.5em;
     gap: 0.2em;
 
+    @media (min-width: 600px) {
+        padding: 1em 4em;
+    }
+
+    @media (min-width: 1000px) {
+        padding: 0 4em 1em;
+    }
+
+    @media (min-width: 1200px) {
+        padding: 0 10vw 1em;
+    }
+
+    @media (min-width: 1600px) {
+        padding: 0 15vw 1em;
+    }
+
     a {
         color: var(--content-quiet);
         text-decoration: none;
