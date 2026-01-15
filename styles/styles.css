@@ -249,7 +249,7 @@ main {
     @media (min-width: 600px) {
         padding: 0 4em;
     }
-        @media (min-width: 1000px){
+    @media (min-width: 1000px){
         display: grid;
         align-items: flex-start;
         grid-template-columns: 2fr 1fr;
