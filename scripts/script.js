@@ -68,17 +68,28 @@ const carousel = document.querySelector(".carousel");
 prevBtn.addEventListener("click", toPrevSlide);
 nextBtn.addEventListener("click", toNextSlide);
 
-// Stap 3: Laat linker knop de media gallerij carousel naar links sliden
 function toPrevSlide() {
+    // Stap 3: Laat linker knop de media gallerij carousel naar links sliden
     const carouselWidth = carousel.offsetWidth;
 
     carousel.scrollLeft = carousel.scrollLeft - carouselWidth * .8;
+
+    // Stap 3: Laat linker knop de media gallerij carousel naar boven sliden als de media gallerij verticaal is
+    const carouselHeight = carousel.offsetHeight;
+
+    carousel.scrollTop = carousel.scrollTop - carouselHeight * .8;    
 }
 
-// Stap 4: Laat rechter knop de media gallerij carousel naar rechts sliden
 function toNextSlide() {
+    // Stap 4: Laat rechter knop de media gallerij carousel naar rechts sliden
     const carouselWidth = carousel.offsetWidth;
 
     carousel.scrollLeft = carousel.scrollLeft + carouselWidth * .8;
+
+    // Stap 4: Laat rechter knop de media gallerij carousel naar beneden sliden als de media gallerij verticaal is
+    const carouselHeight = carousel.offsetHeight;
+    
+    carousel.scrollTop = carousel.scrollTop + carouselHeight * .8;
 }
+
 
