@@ -644,7 +644,9 @@ hgroup {
     }
 
     .media-gallery-button-wrapper {
-        justify-self: center;
+        @media (min-width: 600px) {
+            justify-self: center;
+        }
     }
 }
 
