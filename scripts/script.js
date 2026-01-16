@@ -74,10 +74,13 @@ function toPrevSlide() {
 
     carousel.scrollLeft = carousel.scrollLeft - carouselWidth * .8;
 
-    // Stap 3: Laat linker knop de media gallerij carousel naar boven sliden als de media gallerij verticaal is
-    const carouselHeight = carousel.offsetHeight;
+    
+    if (window.screen.width >= 600) {
+        // Stap 3: Laat linker knop de media gallerij carousel naar boven sliden als de media gallerij verticaal is
+        const carouselHeight = carousel.offsetHeight;
 
-    carousel.scrollTop = carousel.scrollTop - carouselHeight * .8;    
+        carousel.scrollTop = carousel.scrollTop - carouselHeight * .8;
+    }
 }
 
 function toNextSlide() {
@@ -86,10 +89,12 @@ function toNextSlide() {
 
     carousel.scrollLeft = carousel.scrollLeft + carouselWidth * .8;
 
-    // Stap 4: Laat rechter knop de media gallerij carousel naar beneden sliden als de media gallerij verticaal is
-    const carouselHeight = carousel.offsetHeight;
-    
-    carousel.scrollTop = carousel.scrollTop + carouselHeight * .8;
+    if (window.screen.width >= 600) {
+        // Stap 4: Laat rechter knop de media gallerij carousel naar beneden sliden als de media gallerij verticaal is
+        const carouselHeight = carousel.offsetHeight;
+        
+        carousel.scrollTop = carousel.scrollTop + carouselHeight * .8;
+    }
 }
 
 

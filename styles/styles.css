@@ -600,6 +600,10 @@ hgroup {
         .img-thumbnail-active {
             position: relative;
             display:block;
+            
+            @media (min-width: 600px) {
+                width: fit-content;
+            }
 
             /* Radiobutton*/
             & input[type="radio"] {
