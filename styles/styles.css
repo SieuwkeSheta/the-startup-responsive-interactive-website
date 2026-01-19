@@ -510,7 +510,7 @@ hgroup {
 
 /* Media gallerij */
 .media-gallery {
-    padding: 1em 0;
+    margin: 1em 0;
     position: relative;
 
     @media (min-width: 600px) {
@@ -530,8 +530,8 @@ hgroup {
     /* Bewaar product knop */
     .save-product-button {
         position: absolute;
-        top: 3em;
-        right: 3em;
+        top: 2em;
+        right: 2em;
         background-color: transparent;
         border: 1px solid transparent;
         
