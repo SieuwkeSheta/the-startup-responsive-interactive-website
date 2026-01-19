@@ -1,9 +1,13 @@
-Ontwerp en maak een responsive website voor een startup.
-
-De instructies voor deze opdracht staan in: [INSTRUCTIONS.md](https://github.com/fdnd-task/the-startup-responsive-interactieve-website/blob/main/docs/INSTRUCTIONS.md)
-
-# Titel
+# Decathlon Design Challenge - Media Gallerij
 <!-- Geef je project een titel en schrijf in één zin wat het is -->
+
+## Inhoudsopgave
+
+  * [Beschrijving](#beschrijving)
+  * [Kenmerken](#kenmerken)
+  * [Code conventies](#code-conventies)
+  * [Bronnen](#bronnen)
+  * [Licentie](#licentie)
 
 ## Beschrijving
 <!-- In de Beschrijving staat hoe je project er uit ziet, hoe het werkt en wat je er mee kan. -->
@@ -11,7 +15,16 @@ De instructies voor deze opdracht staan in: [INSTRUCTIONS.md](https://github.com
 <!-- Voeg een link toe naar Github Pages 🌐-->
 
 ## Kenmerken
-<!-- Bij Kenmerken staat welke technieken zijn gebruikt en hoe. Wat is de HTML structuur? Wat zijn de belangrijkste dingen in CSS? Wat is er met JS gedaan en hoe? -->
+Ik heb gebruikt gemaakt van HTML, CSS en JS. 
+
+### Code conventies
+#### Ademruimte en inspringen
+
+#### Volgorde en nesten van CSS selectors
+
+#### Nesten van media queries
+
+#### Naamgeving
 
 ## Bronnen
 
