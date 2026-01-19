@@ -5,7 +5,7 @@
 
   * [Beschrijving](#beschrijving)
   * [Kenmerken](#kenmerken)
-  * [Code conventies](#code-conventies)
+    * [Code conventies](#code-conventies)
   * [Bronnen](#bronnen)
   * [Licentie](#licentie)
 
