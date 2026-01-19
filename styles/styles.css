@@ -3,9 +3,13 @@
     /* Zorgt ervoor dat de padding en border bij de breedte horen */
     box-sizing: border-box;
     margin: 0;
+
+    /* Custom font family */
+    font-family: 'inter', sans-serif;
 }
 
 html {
+
     /* Scrollen in html element-gaat smooth */
     @media (prefers-reduced-motion: no-preference) {
         scroll-behavior: smooth;
@@ -24,9 +28,9 @@ html:has(.is-open) {
     /* Colors */
     --brand-color: rgb(54, 67, 186);
     --commercial-color: rgb(255, 205, 78);
-    --content-neutral-light:rgb(255, 255, 255);
-    --content-neutral-dark:rgb(16, 16, 16);
-    --content-quiet:rgb(97, 97, 97);
+    --content-neutral-light: rgb(255, 255, 255);
+    --content-neutral-dark: rgb(16, 16, 16);
+    --content-quiet: rgb(97, 97, 97);
 
     --navigation-button-hover: rgb(241, 240, 238);
     --navigation-button-active: rgb(225, 224, 223);
@@ -34,7 +38,6 @@ html:has(.is-open) {
     --media-button-border-color: rgb(148, 148, 148);
     --media-button-hover-state-background-color: rgb(234, 233, 247);
     --media-button-active-state-background-color: rgb(214, 212, 240);
-
 
     /* Font size */
     --font-size-heading-l: 2rem;
@@ -48,10 +51,11 @@ html:has(.is-open) {
 
     --font-weight-standard: 500;
 
+    /* Header sizes */
     h1 {
         font-size: var(--font-size-heading-m);
     }
-    
+
     h2 {
         font-size: var(--font-size-heading-m);
     }
@@ -68,10 +72,6 @@ html:has(.is-open) {
     @font-face {
         font-family: 'inter';
         src: url('../fonts/Inter-VariableFont_opsz,wght.ttf');
-    }
-
-    * {
-        font-family: 'inter', sans-serif;
     }
 
     /* Media gallery buttons */
@@ -123,7 +123,6 @@ html:has(.is-open) {
         svg {
             vertical-align: bottom;
         }
-
     }
 
     /* Primary navigation links that look like buttons */
@@ -144,7 +143,6 @@ html:has(.is-open) {
         &:active {
             background-color: var(--navigation-button-active);
         }
-
     }
 
     /* Searchbar */
@@ -175,7 +173,7 @@ html:has(.is-open) {
             @media (min-width: 1200px) {
                 width: 40vw;
             }
-            
+
             /* search-icon */
             background-image: url(../assets/search-icon.svg);
             background-repeat: no-repeat;
@@ -211,7 +209,7 @@ html:has(.is-open) {
             [open] &::after {
                 content: url(../assets/accordion-icon-close.svg);
             }
-            
+
             &:hover {
                 cursor: pointer;
             }
@@ -243,30 +241,9 @@ html:has(.is-open) {
     }
 }
 
-main {
-    padding: 0 1.5em;
 
-    @media (min-width: 600px) {
-        padding: 0 4em;
-    }
-    @media (min-width: 1000px){
-        display: grid;
-        align-items: flex-start;
-        grid-template-columns: 2fr 1fr;
-        grid-row: 1fr max-content;
-        column-gap: 3em;
-        padding: 0 4em;
-    }
 
-    @media (min-width: 1200px) {
-        padding: 0 10vw;
-    }
-
-    @media (min-width: 1600px) {
-        padding: 0 15vw;
-    }
-}
-
+/* Header */
 /* Reclame*/
 aside {
     background-color: var(--brand-color);
@@ -340,36 +317,38 @@ aside {
         @media (min-width: 1000px) {
             display: none;
         }
-        
+
     }
 
     .ham-menu {
         position: absolute;
-        width: 100%;
-        height: 100vh;
+        translate: -100%;
         top: 0;
         z-index: 2;
+
+        width: 100%;
+        height: 100vh;
+        padding: 2em 1em;
+        margin: 0;
         list-style: none;
         font-size: var(--font-size-l);
         font-weight: 600;
-        padding: 2em 1em;
-        margin: 0;
         line-height: 1.1;
         background-color: var(--content-neutral-light);
-        translate: -100%;
         transition: 0.3s;
 
         @media (min-width: 1000px) {
             display: flex;
             position: relative;
             translate: 0;
-            background-color: transparent;
-            height: max-content;
-            padding: 0.5em 0 0;
-            font-size: var(--font-size-m);
-            
             /* Positie in de navbar */
             order: 4;
+
+            height: max-content;
+            background-color: transparent;
+            padding: 0.5em 0 0;
+            font-size: var(--font-size-m);
+
         }
 
         .ham-menu-button-close {
@@ -385,7 +364,7 @@ aside {
         li {
             padding: 0.5em 0;
 
-            &:first-of-type{
+            &:first-of-type {
                 padding-top: 3em;
 
                 @media (min-width: 1000px) {
@@ -408,7 +387,7 @@ aside {
         &.is-open {
             translate: 0;
         }
-    }   
+    }
 }
 
 /* Secundaire navigatie */
@@ -441,7 +420,7 @@ aside {
     }
 
     svg {
-        color: var(--content-quiet);   
+        color: var(--content-quiet);
     }
 
     /* Laat de secondary nav inklappen op mobiel */
@@ -468,6 +447,34 @@ aside {
     }
 }
 
+
+
+/* Main content */
+main {
+    padding: 0 1.5em;
+
+    @media (min-width: 600px) {
+        padding: 0 4em;
+    }
+
+    @media (min-width: 1000px) {
+        display: grid;
+        align-items: flex-start;
+        grid-template-columns: 2fr 1fr;
+        grid-row: 1fr max-content;
+        column-gap: 3em;
+        padding: 0 4em;
+    }
+
+    @media (min-width: 1200px) {
+        padding: 0 10vw;
+    }
+
+    @media (min-width: 1600px) {
+        padding: 0 15vw;
+    }
+}
+
 /* Titel van tent */
 hgroup {
     display: grid;
@@ -488,7 +495,6 @@ hgroup {
     gap: 0.8em;
     list-style: none;
     padding: 1em 0;
-
     font-size: 14px;
     font-weight: var(--font-weight-standard);
 
@@ -518,7 +524,7 @@ hgroup {
         grid-template-columns: max-content 1fr;
         gap: 0.5em;
     }
-    
+
     /* Media gallerij links aan pagina vast zetten */
     @media (min-width: 1000px) {
         position: sticky;
@@ -534,10 +540,10 @@ hgroup {
         right: 2em;
         background-color: transparent;
         border: 1px solid transparent;
-        
 
         &:hover {
             cursor: pointer;
+
             svg {
                 fill: #C4C0F7;
             }
@@ -578,7 +584,7 @@ hgroup {
             height: 60dvw;
             flex-direction: column;
             overflow-y: auto;
-            
+
             padding-right: 1em;
             scroll-snap-type: y mandatory;
         }
@@ -593,14 +599,14 @@ hgroup {
 
         img {
             opacity: 0.7;
-            display:block;
+            display: block;
         }
 
         /* Label om radiobutton en img */
         .img-thumbnail-active {
             position: relative;
-            display:block;
-            
+            display: block;
+
             @media (min-width: 600px) {
                 width: fit-content;
             }
@@ -616,7 +622,7 @@ hgroup {
                 &:checked {
                     box-shadow: inset 0 0 0 2px var(--brand-color);
 
-                    &+ img {
+                    &+img {
                         opacity: 1;
                     }
                 }
@@ -638,14 +644,14 @@ hgroup {
         }
 
         /* Bij oneven getallen snapt de image-slider  */
-        li:nth-of-type(odd){
+        li:nth-of-type(odd) {
             scroll-snap-align: start;
         }
     }
 
     .media-gallery-button-wrapper {
         justify-self: start;
-        
+
         @media (min-width: 600px) {
             justify-self: center;
         }
@@ -654,12 +660,13 @@ hgroup {
 
 /* Animatie die hart laat knoppen bij bewaar product */
 @keyframes --heart-pound {
-  50% {
-    transform: scale(1.5)
-  }
-  100% {
-    transform: scale(1);
-  }
+    50% {
+        transform: scale(1.5)
+    }
+
+    100% {
+        transform: scale(1);
+    }
 }
 
 /* Product beschrijving */
@@ -667,7 +674,7 @@ hgroup {
     padding: 1em 0;
     font-weight: var(--font-weight-standard);
     line-height: 1.4;
-    max-width:  50ch;
+    max-width: 50ch;
     font-size: var(--font-size-s);
 }
 
@@ -725,10 +732,11 @@ hgroup {
             background-color: #313daa;
         }
 
-        &:active, &:focus {
+        &:active,
+        &:focus {
             background-color: #262f82;
         }
-    }  
+    }
 }
 
 /* Delevery options */
@@ -771,7 +779,7 @@ hgroup {
         &::before {
             content: url(../assets/green-dot.svg);
             margin-right: 0.5em;
-            
+
         }
     }
 
@@ -797,24 +805,25 @@ hgroup {
     }
 }
 
+
+
 /* Footer */
 footer {
     background-color: var(--brand-color);
     padding: 2.5em 1.5em;
     display: grid;
     gap: 1em;
-    
+
     @media (min-width: 1000px) {
         padding: 2.5em 6em;
     }
-    
+
     /* Retourneren, ruilen en garantie */
     .return-and-warranty {
         display: grid;
         row-gap: 2em;
         list-style: none;
-        
-        padding:0 0 4em;
+        padding: 0 0 4em;
         line-height: 1.3;
 
         @media (min-width: 600px) {
@@ -825,7 +834,7 @@ footer {
         @media (min-width: 1000px) {
             display: flex;
             justify-content: space-between;
-            padding:0 0 2em;
+            padding: 0 0 2em;
         }
 
         p {
@@ -843,7 +852,7 @@ footer {
             text-decoration: underline;
         }
     }
-    
+
     /* download and become memeber */
     .download-and-become-memeber {
         display: flex;
@@ -855,7 +864,7 @@ footer {
             fill: none;
             transition: 0.3s;
         }
-        
+
         &:hover {
             color: #CDD0EE;
             text-decoration: none;
@@ -864,8 +873,6 @@ footer {
                 stroke: #CDD0EE;
             }
         }
-
-        
     }
 
     svg {
@@ -890,7 +897,8 @@ footer {
                 transition: 0.3s;
             }
 
-            &:active, &:focus {
+            &:active,
+            &:focus {
                 background-color: #868ED6;
             }
         }
@@ -898,6 +906,6 @@ footer {
         svg {
             width: 0.75em;
         }
-        
+
     }
 }
