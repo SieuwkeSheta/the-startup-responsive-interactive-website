@@ -4,12 +4,11 @@
     box-sizing: border-box;
     margin: 0;
 
-    /* Custom font family */
+     /* Custom font family */
     font-family: 'inter', sans-serif;
 }
 
 html {
-
     /* Scrollen in html element-gaat smooth */
     @media (prefers-reduced-motion: no-preference) {
         scroll-behavior: smooth;
@@ -25,12 +24,12 @@ html:has(.is-open) {
 
 /* Custom properties */
 :root {
-    /* Colors */
+    /* Kleuren */
     --brand-color: rgb(54, 67, 186);
     --commercial-color: rgb(255, 205, 78);
-    --content-neutral-light: rgb(255, 255, 255);
-    --content-neutral-dark: rgb(16, 16, 16);
-    --content-quiet: rgb(97, 97, 97);
+    --content-neutral-light:rgb(255, 255, 255);
+    --content-neutral-dark:rgb(16, 16, 16);
+    --content-quiet:rgb(97, 97, 97);
 
     --navigation-button-hover: rgb(241, 240, 238);
     --navigation-button-active: rgb(225, 224, 223);
@@ -39,7 +38,7 @@ html:has(.is-open) {
     --media-button-hover-state-background-color: rgb(234, 233, 247);
     --media-button-active-state-background-color: rgb(214, 212, 240);
 
-    /* Font size */
+    /* Font maten */
     --font-size-heading-l: 2rem;
     --font-size-heading-m: 1.6rem;
     --font-size-heading-s: 1.4rem;
@@ -51,11 +50,11 @@ html:has(.is-open) {
 
     --font-weight-standard: 500;
 
-    /* Header sizes */
+    /* Header maten */
     h1 {
         font-size: var(--font-size-heading-m);
     }
-
+    
     h2 {
         font-size: var(--font-size-heading-m);
     }
@@ -74,7 +73,7 @@ html:has(.is-open) {
         src: url('../fonts/Inter-VariableFont_opsz,wght.ttf');
     }
 
-    /* Media gallery buttons */
+    /* Media gallery knoppen */
     .media-gallery-button {
         width: 3.5em;
         margin-top: 1em;
@@ -103,7 +102,7 @@ html:has(.is-open) {
         }
     }
 
-    /* Primary navigation buttons*/
+    /* Primaire navigatie knoppen*/
     .navigation-button {
         padding: 0.6em;
         background-color: transparent;
@@ -125,7 +124,7 @@ html:has(.is-open) {
         }
     }
 
-    /* Primary navigation links that look like buttons */
+    /* Primaire navigatie links die op knoppen lijken */
     .navigation-button-link {
         display: inline-block;
         background-color: transparent;
@@ -145,7 +144,7 @@ html:has(.is-open) {
         }
     }
 
-    /* Searchbar */
+    /* Zoekbalk */
     search {
         display: flex;
         justify-content: center;
@@ -173,7 +172,7 @@ html:has(.is-open) {
             @media (min-width: 1200px) {
                 width: 40vw;
             }
-
+            
             /* search-icon */
             background-image: url(../assets/search-icon.svg);
             background-repeat: no-repeat;
@@ -186,7 +185,7 @@ html:has(.is-open) {
         }
     }
 
-    /* Accordion information */
+    /* Accordion informatie */
     .accordion-information {
         padding: 1em 0;
         font-size: 14px;
@@ -209,7 +208,7 @@ html:has(.is-open) {
             [open] &::after {
                 content: url(../assets/accordion-icon-close.svg);
             }
-
+            
             &:hover {
                 cursor: pointer;
             }
@@ -233,7 +232,7 @@ html:has(.is-open) {
         }
     }
 
-    /* Button transition time */
+    /* Knop transitie tijd */
     button {
         &:hover {
             transition: 0.3s;
@@ -290,7 +289,7 @@ aside {
             padding-right: 3em;
         }
 
-        /* Searchbar komt in het midden te staan */
+        /* Zoekbalk komt in het midden te staan */
         @media (min-width: 1000px) {
             order: 3;
             padding-right: 0;
@@ -317,7 +316,7 @@ aside {
         @media (min-width: 1000px) {
             display: none;
         }
-
+        
     }
 
     .ham-menu {
@@ -348,7 +347,7 @@ aside {
             background-color: transparent;
             padding: 0.5em 0 0;
             font-size: var(--font-size-m);
-
+            
         }
 
         .ham-menu-button-close {
@@ -364,7 +363,7 @@ aside {
         li {
             padding: 0.5em 0;
 
-            &:first-of-type {
+            &:first-of-type{
                 padding-top: 3em;
 
                 @media (min-width: 1000px) {
@@ -387,7 +386,7 @@ aside {
         &.is-open {
             translate: 0;
         }
-    }
+    }   
 }
 
 /* Secundaire navigatie */
@@ -420,10 +419,10 @@ aside {
     }
 
     svg {
-        color: var(--content-quiet);
+        color: var(--content-quiet);   
     }
 
-    /* Laat de secondary nav inklappen op mobiel */
+    /* Laat de secundaire navigatie inklappen op mobiel */
     a:not(:nth-of-type(6)),
     svg {
         display: none;
@@ -433,7 +432,7 @@ aside {
         }
     }
 
-    /* Voegt drie puntjes toe als secondary nav is ingeklapt */
+    /* Voegt drie puntjes toe als secondaeire navigatie is ingeklapt */
     a:nth-of-type(6) {
         &::before {
             content: '...';
@@ -457,7 +456,7 @@ main {
         padding: 0 4em;
     }
 
-    @media (min-width: 1000px) {
+    @media (min-width: 1000px){
         display: grid;
         align-items: flex-start;
         grid-template-columns: 2fr 1fr;
@@ -524,7 +523,7 @@ hgroup {
         grid-template-columns: max-content 1fr;
         gap: 0.5em;
     }
-
+    
     /* Media gallerij links aan pagina vast zetten */
     @media (min-width: 1000px) {
         position: sticky;
@@ -584,7 +583,7 @@ hgroup {
             height: 60dvw;
             flex-direction: column;
             overflow-y: auto;
-
+            
             padding-right: 1em;
             scroll-snap-type: y mandatory;
         }
@@ -599,14 +598,14 @@ hgroup {
 
         img {
             opacity: 0.7;
-            display: block;
+            display:block;
         }
 
         /* Label om radiobutton en img */
         .img-thumbnail-active {
             position: relative;
-            display: block;
-
+            display:block;
+            
             @media (min-width: 600px) {
                 width: fit-content;
             }
@@ -622,7 +621,7 @@ hgroup {
                 &:checked {
                     box-shadow: inset 0 0 0 2px var(--brand-color);
 
-                    &+img {
+                    &+ img {
                         opacity: 1;
                     }
                 }
@@ -644,14 +643,14 @@ hgroup {
         }
 
         /* Bij oneven getallen snapt de image-slider  */
-        li:nth-of-type(odd) {
+        li:nth-of-type(odd){
             scroll-snap-align: start;
         }
     }
 
     .media-gallery-button-wrapper {
         justify-self: start;
-
+        
         @media (min-width: 600px) {
             justify-self: center;
         }
@@ -660,13 +659,12 @@ hgroup {
 
 /* Animatie die hart laat knoppen bij bewaar product */
 @keyframes --heart-pound {
-    50% {
-        transform: scale(1.5)
-    }
-
-    100% {
-        transform: scale(1);
-    }
+  50% {
+    transform: scale(1.5)
+  }
+  100% {
+    transform: scale(1);
+  }
 }
 
 /* Product beschrijving */
@@ -674,7 +672,7 @@ hgroup {
     padding: 1em 0;
     font-weight: var(--font-weight-standard);
     line-height: 1.4;
-    max-width: 50ch;
+    max-width:  50ch;
     font-size: var(--font-size-s);
 }
 
@@ -732,14 +730,13 @@ hgroup {
             background-color: #313daa;
         }
 
-        &:active,
-        &:focus {
+        &:active, &:focus {
             background-color: #262f82;
         }
-    }
+    }  
 }
 
-/* Delevery options */
+/* Bezorgopties */
 .delevery-options {
     padding: 1.5em 0;
     font-size: 15px;
@@ -758,7 +755,7 @@ hgroup {
         color: var(--content-neutral-dark);
     }
 
-    /* Buttons postalcode and store stock  */
+    /* Knoppen postcode en winkelmagazijn */
     button {
         background-color: transparent;
         border: none;
@@ -779,11 +776,11 @@ hgroup {
         &::before {
             content: url(../assets/green-dot.svg);
             margin-right: 0.5em;
-
+            
         }
     }
 
-    /* Home delevery option */
+    /* Thuisbezorging opties */
     .delevery-option-home-delevery {
         h3 {
             display: inline-block;
@@ -813,17 +810,17 @@ footer {
     padding: 2.5em 1.5em;
     display: grid;
     gap: 1em;
-
+    
     @media (min-width: 1000px) {
         padding: 2.5em 6em;
     }
-
+    
     /* Retourneren, ruilen en garantie */
     .return-and-warranty {
         display: grid;
         row-gap: 2em;
         list-style: none;
-        padding: 0 0 4em;
+        padding:0 0 4em;
         line-height: 1.3;
 
         @media (min-width: 600px) {
@@ -834,7 +831,7 @@ footer {
         @media (min-width: 1000px) {
             display: flex;
             justify-content: space-between;
-            padding: 0 0 2em;
+            padding:0 0 2em;
         }
 
         p {
@@ -852,8 +849,8 @@ footer {
             text-decoration: underline;
         }
     }
-
-    /* download and become memeber */
+    
+    /* Download en Word member links */
     .download-and-become-memeber {
         display: flex;
         gap: 0.3em;
@@ -864,7 +861,7 @@ footer {
             fill: none;
             transition: 0.3s;
         }
-
+        
         &:hover {
             color: #CDD0EE;
             text-decoration: none;
@@ -872,7 +869,7 @@ footer {
             svg {
                 stroke: #CDD0EE;
             }
-        }
+        } 
     }
 
     svg {
@@ -897,8 +894,7 @@ footer {
                 transition: 0.3s;
             }
 
-            &:active,
-            &:focus {
+            &:active, &:focus {
                 background-color: #868ED6;
             }
         }
@@ -906,6 +902,6 @@ footer {
         svg {
             width: 0.75em;
         }
-
+        
     }
 }
