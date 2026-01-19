@@ -72,13 +72,14 @@ function toPrevSlide() {
     // Stap 3: Laat linker knop de media gallerij carousel naar links sliden
     const carouselWidth = carousel.offsetWidth;
 
-    carousel.scrollLeft = carousel.scrollLeft - carouselWidth * .8;
-
-    if (window.innerWidth >= 600) {
+   
+    if (window.matchMedia('(min-width: 600px)')) {
         // Stap 3: Laat linker knop de media gallerij carousel naar boven sliden als de media gallerij verticaal is
         const carouselHeight = carousel.offsetHeight;
 
         carousel.scrollTop = carousel.scrollTop - carouselHeight * .8;
+    } else {
+         carousel.scrollLeft = carousel.scrollLeft - carouselWidth * .8;
     }
 }
 
