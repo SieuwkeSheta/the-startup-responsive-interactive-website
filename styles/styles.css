@@ -160,9 +160,9 @@ html:has(.is-open) {
         input {
             background-color: rgb(245, 244, 245);
             border: 1px solid transparent;
-            border-radius: 20px;
+            border-radius: 50px;
             font-size: var(--font-size-m);
-            padding: 0.6em 2em;
+            padding: 0.8em 3em;
             width: 90vw;
 
             @media (min-width: 1000px) {
@@ -176,11 +176,15 @@ html:has(.is-open) {
             /* search-icon */
             background-image: url(../assets/search-icon.svg);
             background-repeat: no-repeat;
-            background-position: 0.2em center;
+            background-position: 1em center;
 
             &::placeholder {
                 color: var(--content-quiet);
                 font-weight: var(--font-weight-standard);
+                
+                @media (min-width: 100px) {
+                    text-align: center;
+                }
             }
         }
     }
