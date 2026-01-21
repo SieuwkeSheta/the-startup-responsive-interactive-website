@@ -99,3 +99,90 @@ function toNextSlide() {
 }
 
 
+
+// Lighbox Media gallerij images
+// Stap 1: selecteer de grote image en de radiobuttons naast de kleine images
+const bigImgLightbox = document.querySelector('.big-image-lightbox')
+const smallImgRadioBtnsLightbox = document.querySelectorAll('[name="img-thumbnail-active lightbox-img-thumbnail"]')
+
+// Stap 2: Wacht tot gebruiker op een radiobutton in een kleine image klikt
+smallImgRadioBtnsLightbox.forEach(
+    function(smallImgRadioBtnLightbox) {
+        smallImgRadioBtnLightbox.addEventListener('change', showbigImgLightbox)
+    }
+)
+
+// Stap 3: Zoek kleine foto in zelfde label als radiobutton en verander grote foto in geklikte kleine foto 
+function showbigImgLightbox(event) {
+    // Laat 'smallImg' de eerst volgende img zijn na de radiobutton (die in hetzelfde label zit)
+    const smallImgLightbox = this.nextElementSibling
+
+    // Verander de grote image in een kleine image door de 'src' van de grote image aan te passen
+    // + verander bijbehorende alt-attribuut
+    bigImgLightbox.src = smallImgLightbox.src
+    bigImgLightbox.alt = smallImgLightbox.alt
+}
+
+
+
+// Lightbox Media gallerij buttons
+// Stap 1: selecteer lightbox media gallerij buttons
+const prevBtnLightbox = document.querySelector('.media-gallery-button.lightbox.prev1')
+const nextBtnLightbox = document.querySelector('.media-gallery-button.lightbox.next1')
+
+// Stap 2: Wacht tot gebruiker op een button klikt
+prevBtnLightbox.addEventListener('click', toPrevSlideLightbox)
+nextBtnLightbox.addEventListener('click', toNextSlideLightbox)
+
+// Stap 3: Zoek naar de radiobutton die is gecheckt en check eerst vorige radiobutton
+function toPrevSlideLightbox() {
+    // Zoeken naar huidige gecheckte radiobutton
+    const smallImgRadioBtnLightboxChecked = document.querySelector('[name="img-thumbnail-active lightbox-img-thumbnail"]:checked')
+
+    // Zoeken naar dichtsbijzijnde li die om het gecheckte radiobutton heen zit
+    const currentLightboxLi = smallImgRadioBtnLightboxChecked.closest('li')
+
+    // Zoeken naar eerst vorige li van de broertjes/zusjes
+    const newLightboxli = currentLightboxLi.previousElementSibling
+    
+    // Controleer of er een broertje/zusje is gevonden
+    // als dat niet zo is, dan was het de laatste en hoef je dus niet verder op te schuiven
+    if(newLightboxli) {
+        // Zoek radiobutton in vorige li die je gevonden hebt
+        const newSmallImgRadioBtnLightbox = newLightboxli.querySelector('[name="img-thumbnail-active lightbox-img-thumbnail"]')
+
+        // Check de radiobutton die is gevonden in de vorige li
+        newSmallImgRadioBtnLightbox.click()
+    }
+}
+
+// Stap 4: Zoek naar de radiobutton die is gecheckt en check eerst volgende radiobutton
+function toNextSlideLightbox() {
+    // Zoeken naar huidige gecheckte radiobutton
+    const smallImgRadioBtnLightboxChecked = document.querySelector('[name="img-thumbnail-active lightbox-img-thumbnail"]:checked')
+
+    // Zoeken naar dichtsbijzijnde li die om het gecheckte radiobutton heen zit 
+    const currentLightboxLi = smallImgRadioBtnLightboxChecked.closest('li')
+
+    // Zoeken naar eerst volgende li van de broertjes/zusjes
+    const newLightboxli = currentLightboxLi.nextElementSibling
+
+    // Controleer of er een broertje/zusje is gevonden
+    // als dat niet zo is, dan was het de laatste en hoef je dus niet verder op te schuiven
+    if(newLightboxli) {
+        // Zoek radiobutton in volgende li die je gevonden hebt
+        const newSmallImgRadioBtnLightbox = newLightboxli.querySelector('[name="img-thumbnail-active lightbox-img-thumbnail"]')
+        
+        // Check de radiobutton die is gevonden in de volgende li
+        newSmallImgRadioBtnLightbox.click()
+    }
+}
+
+
+
+
+
+
+
+
+
