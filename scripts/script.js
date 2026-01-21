@@ -11,11 +11,13 @@ hamMenuButtonClose.addEventListener('click', closeHamMenu)
 function openHamMenu() {
     // Stap 3: Voeg een class toe als de hamburgermenulijst op gaat
     hamMenu.classList.add('is-open')
+    hamMenuButtonClose.classList.add('is-open')
 }
 
 function closeHamMenu() {
     // Stap 4: Verwijder de class als de hamburgermenulijst sluit
     hamMenu.classList.remove('is-open')
+    hamMenuButtonClose.classList.remove('is-open')
 }
 
 

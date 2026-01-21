@@ -315,7 +315,7 @@ aside {
         }
     }
 
-    /* Hamburger menu voor telefoons en tablets */
+    /* Hamburger menu-open voor telefoons en tablets */
     .ham-menu-button-open {
         margin-left: 1.5em;
 
@@ -327,6 +327,24 @@ aside {
             display: none;
         }
         
+    }
+
+    /* Sluit knop voor hamburger menu */
+    .ham-menu-button-close {
+        display: none;
+        transition: 1s;
+        
+        &.is-open {
+            display: flex;
+            z-index: 3;
+            position: absolute;
+            top: 2em;
+            right: 1em;
+            
+            @media (min-width: 1000px) {
+                display: none;
+            }
+        }
     }
 
     .ham-menu {
@@ -358,16 +376,6 @@ aside {
             padding: 0.5em 0 0;
             font-size: var(--font-size-m);
             
-        }
-
-        .ham-menu-button-close {
-            position: absolute;
-            right: 1em;
-            margin-top: -1em;
-
-            @media (min-width: 1000px) {
-                display: none;
-            }
         }
 
         li {
