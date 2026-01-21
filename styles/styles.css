@@ -22,6 +22,12 @@ html:has(.is-open) {
     overflow: hidden;
 }
 
+/* Als lightbox/ popover open is, dan kun je niet verder scrollen */
+html:has(:popover-open) {
+    overflow: hidden;
+    scrollbar-gutter: auto;
+}
+
 /* Custom properties */
 :root {
     /* Kleuren */
@@ -658,6 +664,114 @@ hgroup {
         @media (min-width: 600px) {
             justify-self: center;
         }
+    }
+
+    /* Knop open lightbox media gallerij */
+    .open-lightbox {
+        position: absolute;
+        width: fit-content;
+        background-color: rgb(244, 244, 244);
+        border-radius: 50%;
+        border: 1px solid transparent;
+        bottom: 13.5em;
+        right: 1em;
+        padding: 1em 1em 0.8em;
+        cursor: pointer;
+
+        @media (min-width: 600px) {
+            bottom: 7em;
+        }
+
+        &:hover {
+            background-color: var(--media-button-hover-state-background-color);
+            border: 1px solid var(--media-button-border-color);
+            border-radius: 50%;
+        }
+
+        &:active {
+            background-color: var(--media-button-active-state-background-color);
+        }
+    }
+
+    /* Lightbox media gallerij */
+    .lightbox-popover {
+        border: none;
+        padding: 1em;
+        width: 100%;
+        height: 100%;
+        background-color: rgb(244, 244, 244);
+        scrollbar-gutter: initial;
+
+        /* Knop sluit lightbox media gallerij */
+        .close-lightbox {
+            position: absolute;
+            right: 1em;
+
+            &:hover {
+                border: 1px solid var(--media-button-border-color)
+            }
+        }
+
+        /* Knoppen rechts en links in lightbox media gallerij */
+        .media-gallery-button.lightbox {
+            position: absolute;
+            top: 45%;
+
+            @media (min-width: 600px) {
+                rotate: -90deg;
+                top: 40%;
+            }
+
+            &.prev1 {
+                left: 1em;
+            }
+
+            &.next1 {
+                right: 1em;
+            }
+        }
+
+        /* Wrapper waar de grote foto en de carousel met kleine foto's in zit voor lightbox */
+        .lightbox-images-wrapper {
+            display: flex;
+            justify-content: center;
+            align-items: end;
+
+            /* Grote foto in lightbox */
+            .big-image-lightbox {
+                width: auto;
+                height: 44vh;
+
+                @media (min-width: 600px) {
+                    height: 94vh;
+                }
+            }
+
+            /* Carousel met kleine foto's in lightbox*/
+            .carousel-lightbox {
+                flex-direction: row;
+                overflow-x: auto;
+                scroll-snap-type: x mandatory;
+                scroll-behavior: smooth;
+                height: fit-content;
+                box-shadow: 1px 5px 10px #afafaf;
+                padding: 0.5em;
+
+                position: absolute;
+                width: 13em;
+                top: 45%;
+
+                @media (min-width:600px) {
+                    width: 25em;
+                    right: 1em;
+                    top: auto;
+                }
+
+                .small-image-lightbox {
+                    width: 4em;
+                }
+            }
+        }     
     }
 }
 
