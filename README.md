@@ -25,33 +25,32 @@ kunnen onderzoeken en boeken.
   * [Licentie](#licentie)
 
 ## Beschrijving
+### Het ontwerp
 Uit het klantonderzoek van Decathlon zelf, is gebleken dat de media gallerij werd ervaren als onoverzichtelijk en onduidelijk. 
 
 
 
-<img width="400" alt="image" src="https://github.com/user-attachments/assets/dd541a8a-a9b6-460c-8033-be8543d785f9" /> 
+<img width="300" alt="image" src="https://github.com/user-attachments/assets/dd541a8a-a9b6-460c-8033-be8543d785f9" /> 
 
 >*Screenshot van een Decathlon product pagina media gallerij op desktop*
 
 <br>
 
-<img width="400" alt="image" src="https://github.com/user-attachments/assets/52fe113a-e0ab-4179-9039-515a25189c6b" /> 
+<img width="300" alt="image" src="https://github.com/user-attachments/assets/52fe113a-e0ab-4179-9039-515a25189c6b" /> 
 
 >*Screenshot van een Decathlon product pagina media gallerij op tablet en mobile*
 
 <br>
 
-<img width="400" alt="image" src="https://github.com/user-attachments/assets/b6c6ffce-0a6d-46a3-a938-661689f78c35" />
+<img width="300" alt="image" src="https://github.com/user-attachments/assets/b6c6ffce-0a6d-46a3-a938-661689f78c35" />
 
 >*Screenshot van een Decathlon product pagina lightbox*
 
+Voor het ontwerpen van de media gallerij, heb ik eerst gekeken naar andere e-commerce websites en de lay-out daarvan. Meerdere websites gebruiken 1 grote foto en meerdere kleine foto's voor de navigatie van het vergroten van de details. Daarnaast gebruiken velen een knop voor het scrollen tussen foto's. Zelf heb ik knoppen en een scrollbar gebruikt, voor toegankelijkheid en overzichtelijkheid.
+
+De website is responsive en is Mobile first ontworpen en gemaakt.
 
 
-
-
-
-
-Voor het ontwerpen van de media gallerij, heb ik eerst gekeken naar andere e-commerce websites en de lay-out daarvan. 
 
 ## Kenmerken
 Ik heb gebruikt gemaakt van HTML, CSS en JS. 
