@@ -4,7 +4,7 @@ te onderbouwen, doormiddel van de resultaten van een klantonderzoek wat is gedaa
 
 Er is rekening gehouden met responsiveness en toegankelijkheid van de website voor eindgebruikers. Doormiddel van User-tests, een WCAG audit en Color Contrast tests.
 
-Voor het maken van een JS interactie op de media gallerij, heb ik eerst op meerdere e-commerce websites onderzoek gedaan en gekeken naar wat voor lay-out die gebruiken. Velen gebruiken 1 grote foto met meerdere kleine foto's om te navigeren, dus daar heb ik mij verder in verdiept.
+Voor het maken van een JS interactie op de media gallerij, heb ik eerst op meerdere e-commerce websites onderzoek gedaan en gekeken naar wat voor lay-out die gebruiken. Meerdere websites gebruiken 1 grote foto met meerdere kleine foto's om te navigeren, dus daar heb ik mij verder in verdiept.
 
 Graag zou ik feedback willen op de lay-out die ik heb gebruikt voor de media gallerij en de popover/ lightbox.
 
@@ -16,16 +16,22 @@ ervaring voor de 16 grootste landen. Decathlon werkt niet alleen met sportproduc
 ook met een reisplatform genaamd ‘Decathlon Travel’ waar mensen sportactiviteiten
 kunnen onderzoeken en boeken.
 
+
+
 ## Inhoudsopgave
 
   * [Beschrijving](#beschrijving)
   * [Kenmerken](#kenmerken)
+    * [HTML Structuur](#html-structuur)
+    * [Belangrijke aspecten JS](#belangrijke-aspecten-js)
     * [Code conventies](#code-conventies)
+    
   * [Bronnen](#bronnen)
   * [Licentie](#licentie)
 
+
+
 ## Beschrijving
-### Het ontwerp
 Uit het klantonderzoek van Decathlon zelf, is gebleken dat de media gallerij werd ervaren als onoverzichtelijk en onduidelijk. 
 
 <img width="300" alt="image" src="https://github.com/user-attachments/assets/dd541a8a-a9b6-460c-8033-be8543d785f9" /> 
@@ -90,23 +96,73 @@ Decathlon heeft een overzichtelijke en uitgebreide huisstijl, waardoor het makke
 - Hover states van bepaalde knoppen zijn gelijk aan de knoppen van de Decathlon website
 <img width="95" alt="image" src="https://github.com/user-attachments/assets/4d77b67a-7c58-4ece-b6bd-2eddbdbb0180" />
 
+#### Interactief
+De media galerij is ineractief gemaakt. De interactie is uitgeschreven en verwerkt in een [issue](https://github.com/SieuwkeSheta/the-startup-responsive-interactive-website/issues/10) met sub-issues.
 
+De bedoeling van de interactie is dat als je op een kleine 'thumbnail' foto klikt, de grote foto die er boven staat veranderd in de kleine 'thumbnail' foto.
+
+Feedforward: 
+- 1 foto heeft een border en heeft een opacity van 100%, de rest van de foto's heeft dat niet
+- De foto, die een border heeft en opacity 100%, is te zien als grote foto er boven
+- Met een hover over de foto's krijgt de cursor een hand en krijgt de gehoverde foto opacity 100%
+
+Feedback:
+- Geklikte foto krijgt een border, andere foto met border krijgt minder opacity en de border wordt verwijderd
+- Grote foto er boven veranderd in de geklikte foto
+
+https://github.com/user-attachments/assets/6e8b83a9-afba-4b56-bad2-06f34800691c
 
 
 
 ## Kenmerken
 Ik heb gebruikt gemaakt van HTML, CSS en JS. 
 
+### HTML Structuur
+De HTML structuur van de pagina is semantisch opgebouwd. De pagina bevat een header met daarin 2 `<nav>`'s voor de navigatie, een main voor de inhoud en een footer.
+
+### Belangrijke aspecten JS
+Voor het maken van de media gallerij heb ik meerdere video's gekeken en hulp gekregen van docenten. De kleine foto's zijn radiobuttons om ze interactief te maken. In JS verander ik de 'src' en 'alt' van de grote foto door die van de kleine foto waar op is geklikt met een 'change'-event van de radiobuttons.
+
+https://github.com/SieuwkeSheta/the-startup-responsive-interactive-website/blob/336cfaa4c661c61fe4385bafbb89b3b80b16e95c/scripts/script.js#L39-L59
+
 ### Code conventies
 #### Ademruimte en inspringen
+Ademruimte en inspringen zorgen voor overzicht en het makkelijker kunnen aanpassen van je code. Ik begin block-level elementen op een nieuwe regel en laat inline-level elementen doorlopen op dezelfde regel tenzij er meerdere elementen in de inline-level elementen zitten. Dan zet ik ze onder elkaar.
+
+Voorbeeld:
+https://github.com/SieuwkeSheta/the-startup-responsive-interactive-website/blob/336cfaa4c661c61fe4385bafbb89b3b80b16e95c/index.html#L102-L109
 
 #### Volgorde en nesten van CSS selectors
+De volgorde van de HTML-structuur wordt aangehouden in de CSS en het nesten van de selectors. Ik heb gebruik gemaakt van custom-properties in de `:root` om het *DRY* principe aan te houden
+
+Voorbeeld van custom-properties: 
+https://github.com/SieuwkeSheta/the-startup-responsive-interactive-website/blob/336cfaa4c661c61fe4385bafbb89b3b80b16e95c/styles/styles.css#L33-L38
+
+Voorbeeld van het nesten van CSS selectors:
+https://github.com/SieuwkeSheta/the-startup-responsive-interactive-website/blob/336cfaa4c661c61fe4385bafbb89b3b80b16e95c/styles/styles.css#L198-L225
 
 #### Nesten van media queries
+De website is mobile first gemaakt. De media queries zijn genest in de elementen, waardoor de code overzichtelijker is en de responsiviteit per element makkelijk aan te passen is. 
+
+Voorbeeld:
+https://github.com/SieuwkeSheta/the-startup-responsive-interactive-website/blob/336cfaa4c661c61fe4385bafbb89b3b80b16e95c/styles/styles.css#L534-L551
 
 #### Naamgeving
+De classes heb ik in het engels geschreven en ik heb gebruik gemaakt van kebab-casing zodat de naam beter leesbaar is. Voor de custom-content heb ik algemene namen gebruikt zoals `--media-button-border-color:` zodat ik de kleur kan aanpassen zonder dat ik de naam hoef aan te passen.
+
+Voorbeeld:
+https://github.com/SieuwkeSheta/the-startup-responsive-interactive-website/blob/336cfaa4c661c61fe4385bafbb89b3b80b16e95c/styles/styles.css#L43-L45
+
+
 
 ## Bronnen
+- [Ecommerce product page design HTML, CSS en JS @Rizowan Ahmed Safi](https://www.youtube.com/watch?v=F-6hvovxaSs)
+- [Responsive / Mobile First design](https://github.com/fdnd-task/the-startup-responsive-interactive-website/blob/main/docs/mobile-first.md)
+- [Disney’s motion principles in designing interface animations](https://medium.com/@ruthiran_b/disneys-motion-principles-in-designing-interface-animations-9ac7707a2b43)
+- [A11y Project Checklist](https://www.a11yproject.com/checklist/)
+- [Refactoring en Code conventions @FDND](https://github.com/fdnd-task/the-startup-responsive-interactive-website/blob/main/docs/refactoring-code-conventions.md)
+
+
 
 ## Licentie
 
