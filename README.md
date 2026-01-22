@@ -56,6 +56,8 @@ Voor het ontwerpen van de media galerij, heb ik eerst gekeken naar andere e-comm
 
 >*Mockup van gemaakte product pagina*
 
+Link naar website: https://sieuwkesheta.github.io/the-startup-responsive-interactive-website
+
 #### Responsive
 De website is responsive en is Mobile first ontworpen en gemaakt. Ik heb gebruik gemaakt van breakpoints om de website op verschillende apparaten responsive te maken.
 
