@@ -723,11 +723,12 @@ hgroup {
         /* Knoppen rechts en links in lightbox media gallerij */
         .media-gallery-button.lightbox {
             position: absolute;
-            top: 45%;
+            bottom: 7em;
 
             @media (min-width: 600px) {
                 rotate: -90deg;
                 top: 40%;
+                bottom: auto;
             }
 
             &.prev1 {
@@ -744,6 +745,11 @@ hgroup {
             display: flex;
             justify-content: center;
             align-items: end;
+            padding: 3em 0 0;
+
+            @media (min-width: 600px) {
+                padding: 0;
+            }
 
             /* Grote foto in lightbox */
             .big-image-lightbox {
@@ -767,12 +773,13 @@ hgroup {
 
                 position: absolute;
                 width: 13em;
-                top: 45%;
+                bottom: 5em;
 
                 @media (min-width:600px) {
                     width: 25em;
                     right: 1em;
                     top: auto;
+                    bottom: auto;
                 }
 
                 .small-image-lightbox {
