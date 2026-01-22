@@ -1,12 +1,12 @@
-# Decathlon Design Challenge - Media Gallerij
-In sprint 6 heb ik de opdracht gekregen om in 2,5 week een media gallerij van een product pagina te herontwerpen/ bouwen en de ontwerpkeuzes
-te onderbouwen, doormiddel van de resultaten van een klantonderzoek wat is gedaan door Decathlon zelf.
+# Decathlon Design Challenge - Media Galerij
+In sprint 6 heb ik de opdracht gekregen om in 2,5 week een media galerij van een product pagina te herontwerpen/ bouwen en de ontwerpkeuzes
+te onderbouwen, door middel van de resultaten van een klantonderzoek wat is gedaan door Decathlon zelf.
 
-Er is rekening gehouden met responsiveness en toegankelijkheid van de website voor eindgebruikers. Doormiddel van User-tests, een WCAG audit en Color Contrast tests.
+Er is rekening gehouden met responsiveness en toegankelijkheid van de website voor eindgebruikers. Door middel van User-tests, een WCAG audit en Color Contrast tests.
 
-Voor het maken van een JS interactie op de media gallerij, heb ik eerst op meerdere e-commerce websites onderzoek gedaan en gekeken naar wat voor lay-out die gebruiken. Meerdere websites gebruiken 1 grote foto met meerdere kleine foto's om te navigeren, dus daar heb ik mij verder in verdiept.
+Voor het maken van een JS interactie op de media galerij, heb ik eerst op meerdere e-commerce websites onderzoek gedaan en gekeken naar wat voor lay-out die gebruiken. Meerdere websites gebruiken 1 grote foto met meerdere kleine foto's om te navigeren, dus daar heb ik mij verder in verdiept.
 
-Graag zou ik feedback willen op de lay-out die ik heb gebruikt voor de media gallerij en de popover/ lightbox.
+Graag zou ik feedback willen op de lay-out die ik heb gebruik voor de media galerij en de popover/ lightbox.
 
 #### Wie is Decathlon?
 
@@ -32,17 +32,17 @@ kunnen onderzoeken en boeken.
 
 
 ## Beschrijving
-Uit het klantonderzoek van Decathlon zelf, is gebleken dat de media gallerij werd ervaren als onoverzichtelijk en onduidelijk. 
+Uit het klantonderzoek van Decathlon zelf, is gebleken dat de media galerij werd ervaren als onoverzichtelijk en onduidelijk. 
 
 <img width="300" alt="image" src="https://github.com/user-attachments/assets/dd541a8a-a9b6-460c-8033-be8543d785f9" /> 
 
->*Screenshot van een Decathlon product pagina media gallerij op desktop*
+>*Screenshot van een Decathlon product pagina media galerij op desktop*
 
 <br>
 
 <img width="300" alt="image" src="https://github.com/user-attachments/assets/52fe113a-e0ab-4179-9039-515a25189c6b" /> 
 
->*Screenshot van een Decathlon product pagina media gallerij op tablet en mobile*
+>*Screenshot van een Decathlon product pagina media galerij op tablet en mobile*
 
 <br>
 
@@ -50,7 +50,7 @@ Uit het klantonderzoek van Decathlon zelf, is gebleken dat de media gallerij wer
 
 >*Screenshot van een Decathlon product pagina lightbox*
 
-Voor het ontwerpen van de media gallerij, heb ik eerst gekeken naar andere e-commerce websites en de lay-out daarvan. Meerdere websites gebruiken 1 grote foto en meerdere kleine foto's voor de navigatie van het vergroten van de details. Daarnaast gebruiken velen een knop voor het scrollen tussen foto's. Zelf heb ik knoppen en een scrollbar gebruikt, voor toegankelijkheid en overzichtelijkheid.
+Voor het ontwerpen van de media galerij, heb ik eerst gekeken naar andere e-commerce websites en de lay-out daarvan. Meerdere websites gebruiken 1 grote foto en meerdere kleine foto's voor de navigatie van het vergroten van de details. Daarnaast gebruiken velen een knop voor het scrollen tussen foto's. Zelf heb ik knoppen en een scrollbar gebruikt, voor toegankelijkheid en overzichtelijkheid.
 
 <img width="1000" alt="Mock-up-Decathlon-Design-Challange" src="https://github.com/user-attachments/assets/68e40c74-cbd5-4805-ac44-bce3ada7103e" />
 
@@ -78,10 +78,10 @@ De website is responsive en is Mobile first ontworpen en gemaakt. Ik heb gebruik
 >*Desktop ontwerp - Breakpoint 1200px*
 
 #### Toegankelijk
-Voor de toegankelijkheid heb ik [user-tests](https://github.com/SieuwkeSheta/the-startup-responsive-interactive-website/issues/15), [een WCAG Audit](https://github.com/SieuwkeSheta/the-startup-responsive-interactive-website/issues/17) en [Color Contrast Tests](https://github.com/SieuwkeSheta/the-startup-responsive-interactive-website/issues/18) uitgevoerd, uitgeschreven in issues en verwerkt. Alle foto's hebben een `[alt]`-tag en knoppen hebben een `<title>` zodat de elementen te lezen zijn met een screenreader.
+Voor de toegankelijkheid heb ik [user-tests](https://github.com/SieuwkeSheta/the-startup-responsive-interactive-website/issues/15), [een WCAG Audit](https://github.com/SieuwkeSheta/the-startup-responsive-interactive-website/issues/17) en [Color Contrast Tests](https://github.com/SieuwkeSheta/the-startup-responsive-interactive-website/issues/18) uitgevoerd, uitgeschreven in issues en verwerkt. Alle foto's hebben een `[alt]`-attribuut en knoppen hebben een `<title>` zodat de elementen te lezen zijn met een screenreader.
 
-- User tests zijn uitgevoerd op de media gallerij interactie
-- WCAG Audit is uitgevoerd doormiddel van de Lighthouse Accessibility test van Google Chrome en een handmatige test aan de hand van de checklist van de A11Y Project
+- User tests zijn uitgevoerd op de media galerij interactie
+- WCAG Audit is uitgevoerd door middel van de Lighthouse Accessibility test van Google Chrome en een handmatige test aan de hand van de checklist van de A11Y Project
 - Color Contrast Tests zijn gedaan op de teksten, icons en input-element borders met behulp van de app 'Colour Contrast Analyser' van TPGI
 
 #### Huisstijl
@@ -97,9 +97,9 @@ Decathlon heeft een overzichtelijke en uitgebreide huisstijl, waardoor het makke
 <img width="95" alt="image" src="https://github.com/user-attachments/assets/4d77b67a-7c58-4ece-b6bd-2eddbdbb0180" />
 
 #### Interactief
-De media galerij is ineractief gemaakt. De interactie is uitgeschreven en verwerkt in een [issue](https://github.com/SieuwkeSheta/the-startup-responsive-interactive-website/issues/10) met sub-issues.
+De media galerij is interactief gemaakt. De interactie is uitgeschreven en verwerkt in een [issue](https://github.com/SieuwkeSheta/the-startup-responsive-interactive-website/issues/10) met sub-issues.
 
-De bedoeling van de interactie is dat als je op een kleine 'thumbnail' foto klikt, de grote foto die er boven staat veranderd in de kleine 'thumbnail' foto.
+De bedoeling van de interactie is dat als je op een kleine 'thumbnail' foto klikt, de grote foto die er boven staat, verandert in de kleine 'thumbnail' foto.
 
 Feedforward: 
 - 1 foto heeft een border en heeft een opacity van 100%, de rest van de foto's heeft dat niet
@@ -108,20 +108,20 @@ Feedforward:
 
 Feedback:
 - Geklikte foto krijgt een border, andere foto met border krijgt minder opacity en de border wordt verwijderd
-- Grote foto er boven veranderd in de geklikte foto
+- Grote foto er boven verandert in de geklikte foto
 
 https://github.com/user-attachments/assets/6e8b83a9-afba-4b56-bad2-06f34800691c
 
 
 
 ## Kenmerken
-Ik heb gebruikt gemaakt van HTML, CSS en JS. 
+Ik heb gebruik gemaakt van HTML, CSS en JS. 
 
 ### HTML Structuur
 De HTML structuur van de pagina is semantisch opgebouwd. De pagina bevat een header met daarin 2 `<nav>`'s voor de navigatie, een main voor de inhoud en een footer.
 
 ### Belangrijke aspecten JS
-Voor het maken van de media gallerij heb ik meerdere video's gekeken en hulp gekregen van docenten. De kleine foto's zijn radiobuttons om ze interactief te maken. In JS verander ik de 'src' en 'alt' van de grote foto door die van de kleine foto waar op is geklikt met een 'change'-event van de radiobuttons.
+Voor het maken van de media galerij heb ik meerdere video's gekeken en hulp gekregen van docenten. De kleine foto's zijn radiobuttons om ze interactief te maken. In JS verander ik de 'src' en 'alt' van de grote foto door die van de kleine foto waar op is geklikt met een 'change'-event van de radiobuttons.
 
 https://github.com/SieuwkeSheta/the-startup-responsive-interactive-website/blob/336cfaa4c661c61fe4385bafbb89b3b80b16e95c/scripts/script.js#L39-L59
 
