@@ -112,6 +112,22 @@ Feedback:
 
 https://github.com/user-attachments/assets/6e8b83a9-afba-4b56-bad2-06f34800691c
 
+<br>
+
+Als extra interactie heb ik een popover gebruikt om een lightbox/ vergroting van de media galerij te maken.
+
+De bedoeling van de interctie is dat als je op de vergoot knop klikt, de lightbox open gaat en de foto's in een grotere media galerij te zien zijn.
+
+Feedforward:
+- Vergroot icon onder op grote foto
+- Met een hover over de icon krijgt de cursor een hand en een achtergrond kleur + border
+  
+Feedback:
+- Lightbox gaat open en laat een grotere media galerij zien
+
+https://github.com/user-attachments/assets/623af084-bf62-4400-a173-6c19733811c0
+
+
 
 
 ## Kenmerken
@@ -157,7 +173,7 @@ https://github.com/SieuwkeSheta/the-startup-responsive-interactive-website/blob/
 
 ## Bronnen
 - [Ecommerce product page design HTML, CSS en JS @Rizowan Ahmed Safi](https://www.youtube.com/watch?v=F-6hvovxaSs)
-- [Responsive / Mobile First design](https://github.com/fdnd-task/the-startup-responsive-interactive-website/blob/main/docs/mobile-first.md)
+- [Responsive / Mobile First design @FDND](https://github.com/fdnd-task/the-startup-responsive-interactive-website/blob/main/docs/mobile-first.md)
 - [Disney’s motion principles in designing interface animations](https://medium.com/@ruthiran_b/disneys-motion-principles-in-designing-interface-animations-9ac7707a2b43)
 - [A11y Project Checklist](https://www.a11yproject.com/checklist/)
 - [Refactoring en Code conventions @FDND](https://github.com/fdnd-task/the-startup-responsive-interactive-website/blob/main/docs/refactoring-code-conventions.md)
